@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #f1f5f7
+}
+.main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10vh;
+}
+.card{
+    background: #34495e;
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #0007;
+    border-radius: 4px;
+    padding: 30px;
+    margin: 10px;
+    min-width: 200px;
+    height: 100px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card:hover > div{
+    color: #f1f5f7;
+    transition: background 1s, color .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #34495e;
+    width: 260px;
+    height: 80px;
+}
+.card:hover {
+    background-color: #f1f5f777;
+    padding: 30px 0 ;
+}
+.card:hover > div:after{
+    font-size: 12px;
+    position: absolute;
+    content: 'Clique para acessar';
+    color: #3337;
+    bottom: 10px;
+}
+.link{
+    background-color: transparent;
+    text-decoration: none;
+    color: #000;
+}
+.link:visited{
+    color: #000;
+}

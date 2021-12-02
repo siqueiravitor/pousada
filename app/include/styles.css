@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 0;
+    background: #f1f5f7;
+}
+.body{
+    display: flex;
+    flex: 1;
+    margin-top: 5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2{
+    font-family: monospace;
+    text-transform: uppercase
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+    background: #607e9c77;
+    border-radius: 8px;
+}
+
+.container > *{
+    margin-top: 15px;
+}
+.cadastro{
+    min-width: 400px;
+    min-height: 200px;
+    padding: 30px;
+    box-shadow: 8px 7px 16px 1px #3337;
+}
+.center{
+    justify-content: center;
+    background: transparent;
+}
+.inputArea{
+    width: 100%; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+input:not(input[type='submit']),
+select{
+    background: #f1f5f7;
+    color: #000;
+    padding: 5px;
+    width: 180px;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+
+input:focus:not(input[type='submit']), select:focus{
+    border: 2px solid #2ecc71;
+}
+.btn{
+    padding: 3px 10px;
+}
+.btnCadastrar{
+    background: #2ecc71;
+    outline: 1px solid #3337;
+    color: #000;
+    border-radius: 4px;
+    padding: 7px 21px;
+    border: none;
+    transition: .25s;
+    cursor: pointer;
+    font-weight: 600
+}
+.btnCadastrar:hover{
+    background: #04AA6D;
+    color: #f1f5f7;
+}
+.btnCadastrar:hover:active{
+    background-color: #0fa5;
+    color: #0007;
+}
+.buttons{
+    position: fixed; 
+    right: 20px; 
+    top: 0; 
+    display: flex; 
+    flex-direction: column;
+}
+.buttons > button:hover:not(.selected){
+    cursor: pointer;
+}
+.buttons > button {
+    margin-top: 20px;
+}
+.select{
+    background: #3498db;
+    outline: 1px solid #3337;
+    color: #fff;
+    border-radius: 4px;
+    padding: 7px 21px;
+    border: none;
+    transition: .25s;
+    cursor: pointer;
+    font-weight: 600
+}
+.select:hover{
+    outline-color: #333;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.select:active{
+
+}
+.selected {
+    padding: 3px 10px;
+    border: none;
+}
+
+.hide{
+    transform: translateY(-200%);
+}
+.none{
+    display: none !important;
+}
+.flex{
+}
+
+
+
+/* ===== Scrollbar CSS ===== */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #ffffff;
+}
+*::-webkit-scrollbar {
+    width: 7px;
+}
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #3498db77;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-device-width: 600px){
+    .body{
+        display: block;
+        /*height: 100vh;*/
+        margin-top: 5vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .inputArea{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0
+    }
+    h1,h2{
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    input, select{
+        width: 100% !important;
+        padding: 50px !important;
+        font-size: 40px;
+        margin-bottom: 30px;
+        border: 10px solid #2ecc7177 !important;
+    }
+    input:focus, select:focus{
+        border: 10px solid #04AA6D !important
+    }
+    .btn{
+        width: 100% !important;
+        font-size: 40px;
+        padding: 30px 50px;
+        margin: 10px 0;
+    }
+    .selected{
+        border: none;
+        transition: .25s;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,69 @@
+.msgSuccess {
+    background-color: #2ecc71;
+    color: #000;
+    min-width: 250px;
+    padding: 10px ;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: default;
+    margin-bottom: 10px;
+    transition: 1s ease-in-out;
+    z-index: 20;
+    border-radius: 4px;
+}
+.msgErro {
+    background-color: #f00;
+    color: #fff;
+    min-width: 250px;
+    padding: 10px ;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: default;
+    margin-bottom: 10px;
+    transition: 1s;
+    z-index: 20;
+    border-radius: 4px;
+}
+.msgTop{
+    position: fixed;
+    top: 15px;
+    right: 30px;
+    min-width: 250px;
+    transition: 1s;
+    cursor: default;
+    z-index: 20;
+}
+.hide{
+    transform: translateX(120%);
+    color: transparent;
+    min-width: 250px;
+    padding: 10px ;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 1s;
+    cursor: default;
+    margin-bottom: 10px;
+}
+@media screen and (max-device-width: 600px){
+    .msgSuccess {
+        min-width: 75vw;
+        padding: 20px ;
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+    .msgErro {
+        min-width: 75vw;
+        padding: 20px ;
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+    .hide{
+        min-width: 50vw;
+        padding: 20px ;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
