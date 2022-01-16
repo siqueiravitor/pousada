@@ -26,8 +26,8 @@ numero int(11),
 tipo enum('b','s','m'),
 valor float(10,2),
 capMax int(11),
-estacionamento enum('s','n')
-status enum('s','n')
+estacionamento enum('s','n'),
+status enum('s','n'),
 FOREIGN KEY(idCliente) REFERENCES cliente (idCliente)
 );
 
@@ -42,7 +42,7 @@ idItem int(11) PRIMARY KEY AUTO_INCREMENT,
 idFrigobar int(11),
 nome varchar(50),
 valor float(10,2),
-quantidade int(11)
+quantidade int(11),
 FOREIGN KEY(idFrigobar) REFERENCES frigobar (idFrigobar)
 );
 
